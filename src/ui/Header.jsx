@@ -5,7 +5,8 @@ function Header() {
   return (
     <header>
       <Link to="/">Fast-React-Pizza-Co</Link>
-      <p>Sinan</p>
+      <p className="flex bg-white p-4 text-center">Sinan</p>
+
       <SearchOrder />
     </header>
   );
