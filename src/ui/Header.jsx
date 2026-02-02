@@ -3,11 +3,11 @@ import SearchOrder from "../features/order/SearchOrder";
 
 function Header() {
   return (
-    <header>
+    <header className="bg-yellow-500">
       <Link to="/">Fast-React-Pizza-Co</Link>
-      <p className="flex bg-white p-4 text-center">Sinan</p>
 
       <SearchOrder />
+      <p>Sinan</p>
     </header>
   );
 }
