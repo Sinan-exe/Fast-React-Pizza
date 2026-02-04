@@ -61,7 +61,12 @@ function CreateOrder() {
         <div>
           <label>Address</label>
           <div>
-            <input type="text" name="address" required />
+            <input
+              type="text"
+              name="address"
+              required
+              className="w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-1 focus:ring-yellow-200"
+            />
           </div>
         </div>
 
@@ -78,7 +83,9 @@ function CreateOrder() {
 
         <div>
           <input type="hidden" name="cart" value={JSON.stringify(cart)} />
-          <button>{isSubmitting ? `Placing Order...` : `Order now`}</button>
+          <button className="inline-block rounded-lg bg-yellow-400 px-3 py-2 font-semibold tracking-wide text-stone-800 drop-shadow-sm transition-colors duration-300 hover:bg-yellow-300">
+            {isSubmitting ? `Placing Order...` : `Order now`}
+          </button>
         </div>
       </Form>
     </div>
