@@ -7,6 +7,8 @@ function Button({ children, disabled, to, type }) {
   const className = {
     primary: styles + " px-3 py-2 text-sm sm:text-lg",
     small: styles + "px-2 py-1 text-xs md:text-sm tracking-normal",
+    secondary:
+      "inline-block rounded-lg font-semibold tracking-wide text-stone-500 border drop-shadow-sm transition-colors duration-300 hover:bg-gray-200 hover:text-stone-800 px-3 py-2 text-sm sm:text-lg  ",
   };
 
   if (to) {

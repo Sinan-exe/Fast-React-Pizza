@@ -33,7 +33,7 @@ function Cart() {
     <div className="px-3">
       <LinkButton to="/menu">&larr; Back to menu</LinkButton>
 
-      <h2 className="mt-7 text-lg font-semibold">Your cart, %NAME%</h2>
+      <h2 className="mt-9 text-lg font-semibold">Your cart, %NAME%</h2>
 
       <ul className="mt-3 divide-y divide-stone-200 border-b">
         {cart.map((item) => (
@@ -41,11 +41,11 @@ function Cart() {
         ))}
       </ul>
 
-      <div className="mt-3 space-x-4">
+      <div className="mt-8 space-x-4">
         <Button to="/order/new" type="primary">
           Order pizzas
         </Button>
-        <button>Clear cart</button>
+        <Button type="secondary">Clear cart</Button>
       </div>
     </div>
   );
