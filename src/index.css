@@ -4,7 +4,7 @@
 
 @layer components {
   .input {
-    @apply w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-1 focus:ring-yellow-200;
+    @apply rounded-lg border px-3 py-2 focus:outline-none focus:ring-1 focus:ring-yellow-200;
   }
 
   /* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
