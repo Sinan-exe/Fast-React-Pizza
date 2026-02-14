@@ -1,5 +1,6 @@
 import { formatCurrency } from "../../utils/helpers";
 import DeleteItem from "./DeleteItem";
+import UpdateCartQuantity from "./UpdateCartQuantity";
 
 function CartItem({ item }) {
   //
@@ -14,6 +15,7 @@ function CartItem({ item }) {
         <p className="text-sm font-medium text-stone-500">
           {formatCurrency(totalPrice)}
         </p>
+        <UpdateCartQuantity pizzaId={pizzaId} />
         <DeleteItem pizzaId={pizzaId} />
       </div>
     </li>
