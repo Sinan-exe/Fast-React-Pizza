@@ -11,7 +11,7 @@ function Button({ children, disabled, to, type, onClick }) {
       "inline-block rounded-full bg-yellow-400 font-semibold tracking-wide text-stone-800 drop-shadow-sm transition-colors duration-300 hover:bg-yellow-300  " +
       "px-2 py-1 text-sm  tracking-normal ",
     secondary:
-      "inline-block rounded-lg font-semibold tracking-wide text-stone-500 border drop-shadow-sm transition-colors duration-300 hover:bg-gray-200 hover:text-stone-800 px-3 py-2 text-sm sm:text-lg  ",
+      "inline-block rounded-lg font-semibold tracking-wide text-stone-500 border drop-shadow-sm transition-colors duration-300 hover:bg-gray-200 hover:text-stone-800 px-3 py-1 text-sm sm:text-lg  ",
   };
 
   if (to) {
