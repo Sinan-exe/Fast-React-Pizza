@@ -1,41 +1,56 @@
 # 🍕 Fast React Pizza
 
-Fast React Pizza is a simple and modern pizza ordering web application where users can quickly browse a dynamic pizza menu, add items to a cart, and place an order without creating an account.
+A fast and simple pizza ordering app where users can browse a menu, add items to their cart, and place orders without needing an account.
+
+🔗 **Live Demo:** [fast-react-pizza-green-tau.vercel.app](https://fast-react-pizza-green-tau.vercel.app/)
 
 ---
 
-## 📌 Business Requirements
+## 📋 Overview
 
-Fast React Pizza is a simple pizza ordering web application built with the following business goals:
+Fast React Pizza is a fully functional food ordering app built with React. Users can enter their name, browse the pizza menu, manage their cart, and place an order with optional priority delivery.
 
-- Users can order **one or more pizzas** from the menu
-- No user accounts or login required
-  - Users only enter their name before using the app
+## ✨ Features
 
-- The pizza menu is dynamic and must be **loaded from an API**
-  - Menu items can change over time
+- Enter your name to get started — no sign-up required
+- Browse a dynamic pizza menu
+- Add / remove pizzas from the cart
+- Place orders with name, phone number, and address
+- Mark orders as **priority** for faster delivery
+- Look up any order by order ID
 
-- Users can add multiple pizzas to a cart before placing an order
+## 🛠️ Tech Stack
 
-- Ordering requires only basic customer information:
-  - Name
-  - Phone number
-  - Delivery address
+- **React** — UI framework
+- **React Router v6** — Client-side routing & data loading
+- **Redux Toolkit** — Cart and user state management
+- **Tailwind CSS** — Styling
 
-- If possible, GPS location should be provided to make delivery easierg
+## 📦 Getting Started
 
-- Users can mark their order as **Priority**
-  - Priority adds an extra **20%** to the total cart price
+```bash
+# Clone the repository
+git clone https://github.com/your-username/fast-react-pizza.git
 
-- Orders are placed by sending a **POST request** to the API containing:
-  - Customer data
-  - Selected pizzas
-  - Cart details
-  - Priority status
+# Navigate into the project
+cd fast-react-pizza
 
-- Payments are made **on delivery**, so no online payment integration is needed
+# Install dependencies
+npm install
 
-- Each order receives a unique **Order ID**
-  - This ID is shown to the user for later order tracking
+# Start the development server
+npm run dev
+```
 
-- Users should be able to mark an order as **Priority even after it has been placed**
+## 📁 Project Structure
+
+```
+src/
+├── features/
+│   ├── cart/        # Cart slice & components
+│   ├── menu/        # Menu fetching & display
+│   ├── order/       # Order creation & lookup
+│   └── user/        # User slice & input
+├── ui/              # Shared UI components
+└── App.jsx          # Routes & layout
+```
