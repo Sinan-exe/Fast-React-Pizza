@@ -2,7 +2,7 @@
 
 A fast and simple pizza ordering app where users can browse a menu, add items to their cart, and place orders without needing an account.
 
-🔗 **Live Demo:** [fast-react-pizza-green-tau.vercel.app](https://fast-react-pizza-green-tau.vercel.app/)
+🔗 **Live Demo:** [fast-react-pizza-green-tau.vercel.app](https://fast-react-pizza-u.vercel.app/)
 
 ---
 
@@ -30,7 +30,7 @@ Fast React Pizza is a fully functional food ordering app built with React. Users
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/fast-react-pizza.git
+git clone https://github.com/sinan-exe/fast-react-pizza.git
 
 # Navigate into the project
 cd fast-react-pizza
